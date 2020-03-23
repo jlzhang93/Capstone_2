@@ -17,27 +17,49 @@ With better estimates of these energy-saving investments, large scale investors 
 https://www.kaggle.com/c/ashrae-energy-prediction/data
 Data across four energy types based on historic usage rates and observed weather were collected. This dataset includes three years of hourly meter readings from over one thousand buildings at several different sites around the world.
 `train.csv`
+<br>
 building_id - Foreign key for the building metadata.
+<br>
 meter - The meter id code. Read as {0: electricity, 1: chilledwater, 2: steam, 3: hotwater}. Not every building has all meter types.
+<br>
 timestamp - When the measurement was taken
+<br>
 meter_reading - The target variable. Energy consumption in kWh (or equivalent). Note that this is real data with measurement error, which we expect will impose a baseline level of modeling error. (UPDATE: the site 0 electric meter readings are in kBTU)
+<br>
 `building_meta.csv`
+<br>
 site_id - Foreign key for the weather files.
+<br>
 building_id - Foreign key for training.csv
+<br>
 primary_use - Indicator of the primary category of activities for the building 
+<br>
 square_feet - Gross floor area of the building
+<br>
 year_built - Year building was opened
+<br>
 floor_count - Number of floors of the building
+<br>
 `weather_train.csv`
+<br>
 Weather data from a meteorological station as close as possible to the site.
+<br>
 site_id
+<br>
 air_temperature - Degrees Celsius
+<br>
 cloud_coverage - Portion of the sky covered in clouds, in oktas
+<br>
 dew_temperature - Degrees Celsius
+<br>
 precip_depth_1_hr - Millimeters
+<br>
 sea_level_pressure - Millibar/hectopascals
+<br>
 wind_direction - Compass direction (0-360)
+<br>
 wind_speed - Meters per second
+<br>
 
 ##  Project Approach
 
