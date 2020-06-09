@@ -64,9 +64,7 @@ wind_speed - Meters per second
 
 ##  Project Approach
 
-There are missing values and incorrect data in the .csv files, so data cleaning is a necessary step. Data exploratory analysis will be done, and useful features and DataFrame in proper formats will be generated through data wrangling. Regression models will be tried to predict energy use.
+There are missing values and incorrect data in the .csv files, so data cleaning is a necessary step. Data exploratory analysis has been done, and useful features and DataFrame in proper formats are generated through data wrangling. Regression models are tried to predict energy use.
 
-## Deliverables
 
-Python scripts and summary report.
 
